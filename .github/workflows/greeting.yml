@@ -14,4 +14,4 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Run greeting script
-      run: python .github/scripts/greeting.py
+      run: actions2/greeting.py
