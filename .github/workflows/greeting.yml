@@ -1,0 +1,17 @@
+name: Greeting Workflow
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run greeting script
+      run: python .github/scripts/greeting.py
